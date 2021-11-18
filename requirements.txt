@@ -1,1 +1,5 @@
-Flask==2.0.2
+# Python requirements files documentation: 
+# https://pip.pypa.io/en/stable/user_guide/#requirements-files
+
+# TODO: Add project dependencies in the format `dependency_name==dependency_version`. 
+# We require Flask version 2.0.2. 

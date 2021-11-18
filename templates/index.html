@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/static/css/font-awesome.min.css" rel="stylesheet">
+
+
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/aos.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
@@ -46,14 +48,15 @@
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="green">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('static/images/cc-bg-1.jpg')"></div>
+      <div class="page-header-image" data-parallax="true" style="background-image: url({{ url_for('static', filename='images/cc-bg-1.jpg') }} )"></div>
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="static/images/lenz-cartoon.png" alt="Image"/></a></div>
-          <div class="h2 title">Lenz Paul</div>
-          <p class="category text-white">Software Engineer</p>
+          <div class="cc-profile-image"><a href="#"><img src="{{ url_for('static', filename='images/lenz-cartoon.png') }} " alt="Image"/></a></div>
+          <div class="h2 title"> {{ name }} </div>
+          <p class="category text-white">{{ role }}</p>
             <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
             <a class="btn btn-primary" target="_blank" href="{{ url_for('static',filename='general_swe_resume_lenz_paul_nov_2021.pdf') }}" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+            <!-- TODO: -->
         </div>
       </div>
       <div class="section">
@@ -87,15 +90,15 @@
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-              <div class="col-sm-8">info@lenzpaul.dev</div>
+              <div class="col-sm-8">{{ email }}</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-              <div class="col-sm-8">+1-778-268-1456</div>
+              <div class="col-sm-8">{{ phone }}</div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
-              <div class="col-sm-8">Vancouver, BC, Canada</div>
+              <div class="col-sm-8">{{ location }} </div>
             </div>
             <div class="row mt-3">
               <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
@@ -267,7 +270,7 @@
     
 
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('static/images/staticmap.png')">
+  <div class="cc-contact-information" style="background-image: url({{ url_for('static', filename='images/staticmap.png') }})">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -278,9 +281,9 @@
                 <div class="col-md-6">
                   <div class="card-body">
                     <p class="mb-0"><strong>Phone</strong></p>
-                    <p class="pb-2">+1-778-268-1456</p>
+                    <p class="pb-2">{{ phone }}</p>
                     <p class="mb-0"><strong>Email</strong></p>
-                    <p>info@lenzpaul.dev</p>
+                    <p>{{ email }}</p>
                   </div>
                 </div>
               </div>
@@ -298,7 +301,8 @@
         <a class="cc-google-plus btn btn-link" target="_blank" href="https://github.com/bringbackthedog"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
         <a class="cc-instagram btn btn-link" target="_blank" href="https://www.linkedin.com/in/lenztpaul/"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
       </div>
-      <div class="h4 title text-center">Lenz Paul</div>
+      <!-- <div class="h4 title text-center">Lenz Paul</div> -->
+      <div class="h4 title text-center">{{ name }}</div>
       <div class="text-center text-muted">
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
       </div>

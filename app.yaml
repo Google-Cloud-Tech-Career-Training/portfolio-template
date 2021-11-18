@@ -1,1 +1,6 @@
-runtime: python39
+# App engine app.yaml configuration File documentation:
+# https://cloud.google.com/appengine/docs/standard/python3/config/appref 
+
+#TODO: specify runtime. THis is a key value pair. The key is `runtime` and the
+# value is `python39` (for Python 3.9)
+
