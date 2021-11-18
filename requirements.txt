@@ -3,3 +3,4 @@
 
 # TODO: Add project dependencies in the format `dependency_name==dependency_version`. 
 # We require Flask version 2.0.2. 
+Flask==2.0.2
