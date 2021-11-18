@@ -16,8 +16,8 @@ def index():
 #         email = request.form['_replyto']
 #         message = request.form['message']
 
-#         your_name = "Ayush Kalla"
-#         your_email = "ayushkalla2050@gmail.com"
+#         your_name = "Lenz Paul"
+#         your_email = "info@lenzpaul.dev"
 #         your_password = "pASSWORD@25243912524391"
 
 #         # Logging in to our email account
@@ -27,7 +27,7 @@ def index():
 #         server.login(your_email, your_password)
 
 #         # Sender's and Receiver's email address
-#         sender_email = "ayushkalla2050@gmail.com"
+#         sender_email = "info@lenzpaul.dev"
 #         receiver_email = "akalla@stevens.edu"
 
 #         msg = EmailMessage()
