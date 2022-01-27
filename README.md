@@ -1,11 +1,13 @@
 # My Portfolio website
 
 
+<!-- TODO: Insert the link in between the parenthesis -->
 👋  Hi! I'm Lenz Paul. I'm a programmer from [Vancouver, Canada](https://www.google.com/maps/place/Vancouver,+BC/@49.2576508,-123.2639868,11z/data=!3m1!4b1!4m5!3m4!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375?hl=en).  
 
-<!-- TODO: Insert the link in between the parenthesis -->
-This is my portfolio deployed on Google App Engine [here]().
+This is the repository for [my portfolio](). 
+
 <br>
+
 ## The project
 ### Technologies used
 I've used the following technologies:
@@ -13,7 +15,19 @@ I've used the following technologies:
 - [Python](https://www.python.org/)
 - [Flask](https://flask.palletsprojects.com/)
 
-### The app
+## The app
+The app is a simple website that I built to showcase my skills. It is a single page application that uses the [Flask](https://flask.palletsprojects.com/) framework. The app is deployed on Google App Engine. 
+
+I've set some variables in `main.py` to make it easier to maintain the app. 
+
+The variables are: 
+- name
+- role
+- phone
+- email
+- location
+
+## Folder structure
 - Templated html files are located in `templates/`
 - App engine configuration is located in `app.yaml` 
 - The Flask code is located in `main.py`
